@@ -99,7 +99,8 @@ $('.post main').scroll(function (){
 		} 
 	}
 });
-// bing background
+
+/* Disable external bing background
 if( $('.page').hasClass('post') ){
 	$.ajax({
 		type: 'GET',
@@ -124,9 +125,9 @@ if( $('.page').hasClass('post') ){
 			console.error(err);
 		}
 	})
-}
+} */
 
-// materail effet
+// material ripple effect
 var addRippleEffect = function (e) {
     var target = e.target;
     var rect = target.getBoundingClientRect();
@@ -156,7 +157,6 @@ $(document).ready(function() {
 			$(this).addClass('hljs')
 		}
 	});
-	//Lightense('img');
 	Lightense('.post-html img', {
 		time: 300,
 		padding: 40,
