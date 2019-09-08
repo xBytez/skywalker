@@ -1609,12 +1609,17 @@ a:hover {
     color: #039be5
 }
 
+#post-title, #post-content {
+    color: #fff;
+}
+
 code {
     background: #e3f2fd;
     padding: 2px 2px;
     border-radius: 5px;
     margin: 0 .25em;
     font-family: SourceCodePro!important;
+    color: #fff;
     font-size: 14px!important;
     line-height: 18px!important;
 }
@@ -1652,15 +1657,14 @@ code {
 main {
     flex-direction: column;
     flex: 1;
-    background-color: #F9FAFB;
+    background-color: #121212;
     height: 100%
 }
 
 header.nav-wrapper {
     display: inherit;
     justify-content: space-between;
-    /*background: url(https://oc8prtequ.qnssl.com/images/postbg.jpg) 50% 50%;*/
-    background: url(https://oc8prtequ.qnssl.com/postbg.jpg) 50% 50%;
+    /* background: url(https://oc8prtequ.qnssl.com/postbg.jpg) 50% 50%; Don't directly link to other hosts */
     background-size: cover;
     width: 100%;
     height: 100%
@@ -1716,7 +1720,8 @@ header.nav-wrapper {
 }
 
 .profile {
-    font-family: SourceCodePro
+    font-family: SourceCodePro;
+    color: #fff;
 }
 
 .index #menu {
@@ -1844,7 +1849,7 @@ ul.link li {
     overflow: hidden;
     line-height: 20px;
     font-size: 13px;
-    color: rgba(0, 0, 0, .65);
+    color: #fff;
     height: 60px;
     word-break: break-all
 }
@@ -1852,16 +1857,16 @@ ul.link li {
 .post-item {
     display: flex;
     flex-direction: column;
-    background-color: #fff;
+    background-color: #292929;
     margin-bottom: 20px;
     position: relative;
     border-radius: 3px;
-    box-shadow: 0 5px 7px 0 rgba(193, 204, 215, .61);
+    /* looks bad with dark theme box-shadow: 0 5px 7px 0 rgba(193, 204, 215, .61); */
     transition: all .3s
 }
 
 .post-item:hover {
-    box-shadow: 0 8px 10px 0 rgba(193, 204, 215, .8)
+    box-shadow: 0 8px 10px 0 rgba(0, 0, 0, .8)
 }
 
 .post-item .item-header {
@@ -1875,7 +1880,7 @@ ul.link li {
 .post-item .item-content {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
     padding: 10px 20px;
     color: #888;
     font-size: 14px;
@@ -1908,12 +1913,8 @@ ul.link li {
 
 .item-header p {
     font-size: 18px;
-    color: #555;
+    color: #fff;
     margin: 10px 0
-}
-
-.post-item:hover .item-header p {
-    color: #333
 }
 
 .item-header span {
@@ -2259,6 +2260,7 @@ code.has-numbering {
 
 .archives h3 {
     font-family: monospace;
+    color: #fff;
     font-size: 15px;
     margin: 4px 0 0 -120px;
     float: left
@@ -2280,7 +2282,7 @@ code.has-numbering {
     color: #999;
     display: inline-block;
     width: 35px;
-    font-family: monospace
+    font-family: monospace;
 }
 
 .archives-title {
@@ -2291,7 +2293,8 @@ code.has-numbering {
 }
 
 .about {
-    font-family: SourceCodePro
+    font-family: SourceCodePro;
+    color: #fff;
 }
 
 #show-slide-nav i {
@@ -2607,4 +2610,7 @@ aside ul li{
 }
 #feedAv{
     display:none !important;
+}
+.poweredby { 
+    color: #fff;
 }
