@@ -1,6 +1,6 @@
 # skywalker
 
-A responsive material design style theme for Ghost blogs. This is a fork of https://github.com/flute/skywalker.
+A responsive Material Design-style theme for Ghost blogs. This is a fork of https://github.com/flute/skywalker. This fork's main purpose is to turn it into a dark version.
 
 [Demo](https://blog.xbytez.io/)
 
